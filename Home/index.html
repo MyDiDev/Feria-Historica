@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Page</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +20,8 @@
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg" id="header">
+
+    <nav class="navbar navbar-expand-lg p-4 shadow-xl" id="header">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="#">Navbar</a>
         <button
@@ -59,11 +65,127 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100dvh;
+        height: 100%;
+        gap: 10rem;
+        flex-direction: column;
       "
     >
+      <section id="section-1">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+          "
+        >
+          <h1 style="font-size: 50px; text-align: center; line-height: 1.5">
+            Pais de Bellezas
+          </h1>
+          <hr class="w-75" size="7px" color="white" />
+          <button
+            class="btn w-50 shadow-xl"
+            style="border-radius: 20px"
+            id="btn"
+          >
+            Book Now
+          </button>
+          <div>
+            <form
+              class="p-4"
+              action=""
+              id="home-form"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                margin-top: 50px;
+                background-color: rgba(23, 23, 23, 0.827);
+                flex-wrap: wrap;
+                border-radius: 15px;
+              "
+            >
+              <div>
+                <h5>Where To?</h5>
+                <input
+                  type="text"
+                  name="place"
+                  placeholder="Place Name"
+                  id="input"
+                />
+              </div>
+              <div>
+                <h5>When?</h5>
+                <input
+                  type="text"
+                  name="date"
+                  id="input"
+                  placeholder="dd/mm/yyyy"
+                />
+              </div>
+              <div>
+                <h5>How Many?</h5>
+                <input type="text" id="input" placeholder="No. Of Tourist" />
+              </div>
+              <div>
+                <button type="submit" class="btn w-100" id="btn">
+                  Find Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section>
-        <h1>Titulo</h1>
+        <div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 20px;
+              background-color: black;
+              border-radius: 15px;
+            "
+            id="section-2"
+          >
+            <div>
+              <img
+                src="https://thebestofdr.do/wp-content/uploads/2024/10/Hoteles-en-la-Zona-Colonial-e1727799693725-1080x630.jpg"
+                alt=""
+                id="img_slider"
+              />
+            </div>
+            <div style="padding: 30px">
+              <span style="color: rgb(31, 139, 176)">Porque RD es la para</span>
+              <h2 style="color: rgb(99, 210, 247); font-weight: bolder">
+                Bla Bla Bla
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Placeat, accusantium.
+              </p>
+              <button class="btn" id="btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Continuas Aqui -->
+
+      <section>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+          "
+        ></div>
       </section>
     </main>
 
