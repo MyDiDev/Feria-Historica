@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #171717;
+  color: white;
+}
+
+#header {
+  background-color: #222222;
+  position: sticky;
+  top: 0;
+}
