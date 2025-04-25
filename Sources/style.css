@@ -33,6 +33,21 @@ body {
   padding: 6rem;
 }
 
+#section-3 {
+  background-image: url("https://content.r9cdn.net/rimg/dimg/f2/36/1fbe7a3d-hood-216602-169d9893ee2.jpg?width=1366&height=768&xhint=1327&yhint=1439&crop=true");
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-position: center;
+  margin-top: 2rem;
+  padding: 6rem;
+  text-align: center;
+  margin-top: 15dvh;
+}
+
 #btn {
   border: solid 1px rgb(99, 210, 247);
   color: rgb(99, 210, 247);
@@ -42,6 +57,18 @@ body {
 
 #btn:hover {
   background-color: rgb(99, 210, 247);
+  color: white;
+}
+
+#btn-green {
+  border: solid 1px #a3b140;
+  color: #a3b140;
+  transition: 0.3s all ease;
+  font-weight: bolder;
+}
+
+#btn-green:hover {
+  background-color: #a3b140;
   color: white;
 }
 
@@ -59,24 +86,12 @@ body {
 }
 
 #img_slider {
-  width: 500px;
+  width: 700px;
   size: cover;
   position: center;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color-burn;
-}
-
-@media only screen and (max-width: 768px) {
-  #section-2 {
-    flex-wrap: wrap;
-  }
-
-  #img_slider {
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    padding-bottom: 20px;
-  }
 }
 
 .card-custom {
@@ -86,30 +101,37 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
+
 .card-custom:hover {
   transform: scale(1.03);
 }
+
 .card-img-top {
   height: 180px;
   object-fit: cover;
 }
+
 .card-body {
   padding: 1rem;
 }
+
 .card-title {
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
 }
+
 .card-text {
   font-size: 0.9rem;
   color: #ccc;
 }
+
 .read-more {
   color: #00e6e6;
   text-decoration: none;
   font-weight: bold;
 }
+
 .read-more:hover {
   text-decoration: underline;
 }
@@ -164,4 +186,54 @@ body {
 
 .review-img {
   height: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 10dvh;
+  background-color: #222222;
+  flex-wrap: wrap;
+}
+
+#footer-info h2 {
+  font-size: 20px;
+}
+
+#footer-info p {
+  font-size: 12px;
+  width: 50%;
+}
+
+#links_footer1 > img {
+  cursor: pointer;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+#footer-link-info p {
+  font-size: 12px;
+  margin: 8px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #section-2 {
+    flex-wrap: wrap;
+  }
+
+  #img_slider {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
